@@ -14,12 +14,12 @@
 }
 
 body {
-    background: url(/Website/backgrounds/Hobbies.jpg);
+    background: url(/Website/backgrounds/Hobbies.jpg) fixed, center, no-repeat;
     font-family: 'Poppins' !important;
 }
 
 section.second-background {
-    background: rgba(0, 0, 0, 0.675);
+    background: rgba(0, 0, 0, 0.725);
     width: 100%;
     height: 900px;
     position: absolute;
@@ -69,11 +69,65 @@ nav ul li a {
 .logo {
     font-size: 4em;
     transition: 0.5s;
-    color: white;
+    color: var(--c-white);
     position: absolute;
     left: 15%;
 }
 .logo:hover {
     color: var(--c-purple);
     margin: 0 15px;
+}
+
+header {
+    width: 40%;
+    margin: 20px 12%;
+    padding: 40px;
+    opacity: 0.1;
+    color: #FFFAFA;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+header h1 {
+    font-size: 60px;
+    color:#80451c;
+}
+header p {
+    padding-top: 25px;
+    font-size: 21px;
+}
+
+@keyframes appear {
+    100% {
+        opacity: .9;
+    }
+}
+
+.lichess__bottom button {
+    background: #5c381e;
+    color: var(--c-white);
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.lichess__bottom button:hover {
+    transform: scale(1.05);
+    background: #80451c;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.815);
+}
+
+video {
+    background: black;
+    position: absolute;
+    width: 925px;
+    height: 555px;
+    top: 20%;
+    right: 1.5%;
 }
