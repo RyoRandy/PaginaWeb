@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --c-white: white;
+    --c-red: #F7544D;
+    --c-purple:#7274F7;
+    --c-yellow: #E6AC6E;
+}
+
+body {
+    background: url(/backgrounds/Hobbies.jpg);
+    font-family: 'Poppins' !important;
+}
+
+section.second-background {
+    background: rgba(0, 0, 0, 0.675);
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    z-index: 0;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.750);
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    line-height: 100px;
+    margin: 0 10px 0 10px;
+    color: var(--c-white);
+    padding: 5px 15px;
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+
+.red-link:hover {
+    border-bottom: 1px solid var(--c-red);
+    margin-right: 17px;
+    color: var(--c-red);
+}
+
+.blue-link:hover {
+    border-bottom: 1px solid var(--c-purple);
+    margin: 0 17px;
+    color: #7274F7;
+}
+
+.yellow-link:hover {
+    border-bottom: 1px solid #E6AC6E;
+    margin-left: 17px;
+    color: #E6AC6E;
+}
+
+.logo {
+    font-size: 4em;
+    transition: 0.5s;
+    color: white;
+    position: absolute;
+    left: 15%;
+}
+.logo:hover {
+    color: var(--c-purple);
+    margin: 0 15px;
+}
