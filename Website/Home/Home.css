@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url(/backgrounds/Home.jpg) fixed, center, no-repeat;
+    background: url(/Website/backgrounds/Home.jpg) fixed, center, no-repeat;
     font-family: 'Poppins' !important;
 }
 
@@ -112,7 +112,12 @@ header p {
 .profile_picture img {
     width: 400px;
     height: 400px;
+    opacity: .8;
+    transition: .5s;
     border-radius: 50%;
+}
+.profile_picture img:hover {
+    opacity: 1;
 }
 
 .media-container {
