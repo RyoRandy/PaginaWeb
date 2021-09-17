@@ -125,6 +125,7 @@ header p {
 
 video {
     background: black;
+    border-radius: 20px;
     position: absolute;
     width: 925px;
     height: 555px;
