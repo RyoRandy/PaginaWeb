@@ -16,12 +16,12 @@ function Calcular(){
         resultado = x / y;
     }
 
-    document.querySelector("#resultado").innerHTML = resultado;
-
     localStorage.setItem("Resultado", resultado);
+    alert(`El resultado es: ${resultado}`);
 }
 
 function Historial(){
+    var i = 0;
     if(localStorage.getItem("Resultado")){
         alert("El resultado es: " + localStorage.getItem("Resultado"));
     } else {
